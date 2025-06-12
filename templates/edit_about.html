@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Edit About Page</h1>
+    <form method="POST">
+        <textarea name="content" rows="15" cols="100">{{ content }}</textarea><br><br>
+        <button type="submit">Save</button>
+        <a href="{{ url_for('admin_panel') }}">Back to Admin</a>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel - Prasad's Forex Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to Admin Panel</h1>
+
+    <form>
+        <h2>Edit Website Sections</h2>
+        <ul>
+            <li><a href="{{ url_for('edit_home') }}">✏️ Edit Home Page</a></li>
+            <li><a href="{{ url_for('edit_tool') }}">🛠️ Edit Tool Page</a></li>
+            <li><a href="{{ url_for('edit_about') }}">📄 Edit About Page</a></li>
+        </ul>
+    </form>
+
+    <div style="text-align:center; margin-top: 40px;">
+        <a href="{{ url_for('home') }}">🏠 Go to Website</a>
+    </div>
+</body>
+</html>
